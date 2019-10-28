@@ -1,21 +1,3 @@
-let xhr = new XMLHttpRequest();
-let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=nhac%20acoustic%202019&type=video&key=AIzaSyC25wlU4AKd7qLgIVmugro1ZWZYbjUm4ZI&fbclid=IwAR1qnautC1LOm8tNUtC1peKRzckeC9xnObcmMlR0Dj8X_xFdEfw87MzBbKo";
-xhr.open("GET", url);
-xhr.onreadystatechange = function(result){
-    if(this.readyState === 4 && this.status === 200){
-        let object = JSON.parse(this.responseText);
-        console.log(object);
-        let s = '';
-        let total = '';
-        for(let j = 0; j < object.items.length; j++){
-            s = "https://www.youtube.com/embed/" + object.items[j].id.videoId;
-            total += '<iframe width="250" height="200" src="' + s + '"></iframe>';
-        }
-        document.getElementById("video").innerHTML = total;
-    }
-}   
-xhr.send();
-
 //Play youtube in modal style
 $(document).ready(function() {
 
@@ -46,3 +28,34 @@ $(document).ready(function() {
         $("#video").attr('src', $videoSrc);
     })
 })
+function getVideo(){
+    let xhr = new XMLHttpRequest();
+    let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=nhac%20acoustic%202019&type=video&key=AIzaSyC25wlU4AKd7qLgIVmugro1ZWZYbjUm4ZI&fbclid=IwAR1qnautC1LOm8tNUtC1peKRzckeC9xnObcmMlR0Dj8X_xFdEfw87MzBbKo";
+    xhr.open("GET", url);
+    xhr.onreadystatechange = function(result){
+        if(this.readyState === 4 && this.status === 200){
+            let object = JSON.parse(this.responseText);
+            // console.log(object);
+            let image = '';
+            let name = '';
+            let id = '';
+            let total = '';
+            for(let j = 0; j < object.items.length; j++){
+                id = object.items[j].id.videoId;
+                name = object.items[j].snippet.title;
+                image = object.items[j].snippet.thumbnails.high.url;
+                total += `<div class="videothumbnail">
+                            <span data-toggle="tooltip" data-placement="right" title="Click to listen on youtube">
+
+                                <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="${image}" alt="${name}" data-id="${id}">
+                                <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="${id}">${name}</div>
+
+                            </span>
+                        </div>`;
+            }
+            document.getElementById("txtvideo").innerHTML = total;
+        }
+    }   
+    xhr.send();
+}
+getVideo();
