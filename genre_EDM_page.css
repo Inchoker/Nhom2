@@ -1,0 +1,14 @@
+h1{
+    color: black;
+    text-align: center;
+}
+.border{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: whitesmoke;
+}
+#video{
+    box-sizing: border-box;
+    margin-left: 100px;
+}
