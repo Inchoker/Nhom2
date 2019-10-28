@@ -26,7 +26,7 @@ function showTrend(json) {
         let snippet = bai.snippet;
         let title = snippet.title;
         let thumbnails = snippet.thumbnails;
-        let defthumb = thumbnails.default;
+        let defthumb = thumbnails.high;
         let url = defthumb.url;
 
 
@@ -38,10 +38,10 @@ function showTrend(json) {
                 <!-- an vao toggle ra modal  -->
                 <!-- them id vao the img  -->
                 <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="${url}" alt="${title}" data-id="${bai.id}">
+                </span>
                 <!-- thay description cua thumbnail  -->
-                <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="${bai.id}">${title}</div>
+                <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="${bai.id}" title="1234567">${title}</div>
 
-            </span>
         </div>`
 
 
@@ -49,6 +49,7 @@ function showTrend(json) {
     }
     console.log(s)
     bxh.innerHTML = s;
+    $('[data-toggle="tooltip"]').tooltip();
 }
 
 
@@ -59,8 +60,6 @@ $(document).ready(function() {
     // Gets the video src from the data-id on each img tag
 
     let $videoSrc;
-    // $('.vungChon').click(function() {
-    // });
     $(document).on('click', '.vungChon', function() {
         $videoSrc = $(this).data("id");
     });
