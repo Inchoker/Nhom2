@@ -37,17 +37,16 @@ function showTrend(json) {
 
                 <!-- an vao toggle ra modal  -->
                 <!-- them id vao the img  -->
-                <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="${url}" alt="${title}" data-id="${bai.id}">
+                <img class="thumbnail vungChon"  data-toggle="modal" data-target="#myModal" src="${url}" alt="${title}" data-id="${bai.id}">
                 </span>
                 <!-- thay description cua thumbnail  -->
-                <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="${bai.id}" title="1234567">${title}</div>
+                <span class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="${bai.id}" title="${title}">${title}</span>
 
         </div>`
 
 
 
     }
-    console.log(s)
     bxh.innerHTML = s;
     $('[data-toggle="tooltip"]').tooltip();
 }
@@ -56,6 +55,10 @@ function showTrend(json) {
 
 //Play youtube in modal style
 $(document).ready(function() {
+    // // thay pointer khi mouse over 
+    // $(document).on("mouseover", ".vungChon", function() {
+    //     $(".vungChon:hover").css("cursor", "pointer")
+    // })
 
     // Gets the video src from the data-id on each img tag
 

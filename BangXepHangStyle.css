@@ -2,7 +2,7 @@
 
 body {
     height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1537210249814-b9a10a161ae4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    background-image: url('https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,27 +14,28 @@ body {
 }
 
 div.videothumbnail {
-    margin: 5px;
-    border: 1px solid #ccc;
     float: left;
+    margin: 5px;
     width: 380px;
-    height: 340px;
+    height: 330px;
 }
 
 div.videothumbnail:hover {
-    border: 1px solid #777;
+    transform: scale(1.03);
 }
 
 div.videothumbnail img {
     width: 100%;
     height: auto;
+    padding: 0;
+    border: 0;
+    margin-bottom: 0;
 }
 
-div.desc {
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    height: 100%;
+span.desc {
+    margin: auto;
+    color: white;
+    display: table;
 }
 
 .vungChon:hover {
@@ -67,4 +68,14 @@ body {
     font-weight: normal;
     color: white;
     opacity: 1;
+}
+
+
+/* css khac */
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    width: 100%;
 }
