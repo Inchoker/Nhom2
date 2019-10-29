@@ -4,6 +4,10 @@
 }
 .image{
     background-image: url('https://images.unsplash.com/photo-1487180144351-b8472da7d491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    width: 100%;
 }
 .text-genre a{
     text-decoration: none;
@@ -22,4 +26,67 @@
     margin: 10px;
     padding: 20px;
     font-size: 30px;
+}
+.menu-genre-inner .menu-list ul{
+    display: flex;
+    padding-left: 80px;
+}
+.thumbnail{
+    padding: 0;
+}   
+div.videothumbnail {
+    margin: 5px;
+    /* border: 1px solid #ccc; */
+    float: left;
+    width: 300px;
+    height: 400px;
+}
+
+div.videothumbnail img {
+    width: 300px;
+    height: 250px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+/* div.desc:hover{
+    background-color: black;
+} */
+
+.vungChon:hover {
+    cursor: pointer;
+}
+
+
+/* css cua modal  */
+
+body {
+    margin: 2rem;
+}
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 5rem;
+    font-weight: normal;
+    color: white;
+    opacity: 1;
 }
