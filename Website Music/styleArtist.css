@@ -38,7 +38,17 @@
     clear: both;
   }
 
-  #container{
-    display: flex;
-    flex-wrap: wrap;
+  .container{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    font-family: 'Jomolhari', serif;
+    font-family: 'Open Sans', sans-serif;
   }
+
+  /* Hiệu ứng bóng mờ */
+  img:hover
+{
+     opacity: 0.3;
+     filter: alpha(opacity=30);
+}
+  /* PhotoScape */
