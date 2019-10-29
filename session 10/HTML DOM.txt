@@ -1,0 +1,8 @@
+DOM = Document Object Model
+
+HTML                        JS
+<a> ...</a>                 let a = <a> ... </a>
+                            => DOM
+
+
+- Lấy giá trị từ người dùng

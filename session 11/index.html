@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trắc nghiệm Javascript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "container">
+        <h1 class="text-center">
+                Chào mừng bạn tới bài trắc nghiệm Javascript
+        </h1>
+ 
+        <p>Sau đây là các câu hỏi dành cho bạn</p>
+        
+        <div id="content">
+            <div>1. Câu hỏi: <span id="indexCauHoi">1</span> / <span id="totalCauHoi"> 10 </span></div>
+            <div >2. Nội dung câu hỏi: <span id="cau-hoi"></span></div>
+            <div>3. Đáp án
+                <form>
+                    <ol type ="A" id="answerQuestion">
+ 
+                    <li id ="1"> Đáp án 1</li>
+                    <li id ="2"> Đáp án 2 </li>
+                    <li id ="3"> Đáp án 3 </li>
+                    <li id ="4"> Đáp án 4 </li>
+ 
+                    </ol>
+                </form>
+ 
+            </div>
+            <div class="hidden">4. Kết quả</div>
+            <div>5. Submit / Next question</div> 
+                <button class="btn btn-primary" onclick="submitAnswer()">Submit</button>
+                <button class="btn btn-success" onclick="nextQuestion()">Next Question</button>  
+    </div>
+    </div>
+    <p><button onclick="Shuffle(a)">Shuffle</button></p>
+ 
+    <script src="codeweb.js "></script>
+</body>
+</html>

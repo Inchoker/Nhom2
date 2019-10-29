@@ -1,0 +1,110 @@
+<!--
+1.HTML
+    Tạo khung trang web gồm các thành phần nào.
+
+Cấu trúc HTML:
+    <html>
+        <head>
+            <tile></title>Tiêu đề trang web
+            style của trang web    
+        </head> : Trình duyệt đọc settings
+        
+        <body></body> Toàn bộ khung web
+    </html>
+
+Cú pháp: Cấu trúc cha con, Thẻ bao sẽ là cha,   
+                           Thẻ nằm trong sẽ là con.
+
+HTML có các thẻ (tag) đi theo cặp
+        Thẻ mở:           Nội dung              Thẻ đóng
+            <body>       Hello World              </body>
+            <h1>                                  </h1>
+
+        Thẻ rỗng:
+        <br/> : Xuống dòng
+        <hr/> : Dấu gạch ngang
+
+Thuộc tính của thẻ HTML: 
+        - Viết trong thẻ mở.
+        <tenthe thuoctinh1 = "giatri" thuoctinh2 = "giatri">
+                Nội dung
+        </tenthe>
+
+
+
+2.CSS
+    Style cho trang web
+
+Cấu trúc: đặt trong thẻ <head>
+Cú pháp:
+        selector{ // Xác định thẻ HTML được áp dụng 
+        }
+            tenthuoctinh: giatri; // Định nghĩa ra style
+            tenthuoctinh: giatri;
+
+        }
+
+        selector -> gọi đến tên thẻ     tenthe{ 
+                                                h1{
+
+                                                }
+                                               }
+        2. gọi đến class của thẻ .tenclass{ .do {
+                                                }
+                                          }
+        3. gọi đến id của thẻ   #tenid{ #red{
+                                            }
+                                     }
+
+
+
+
+
+    tenthe.tenclass{    => Gọi đến thẻ mà có class tương ứng
+        
+    }
+
+    tenthe#tenID{   => Gọi đến thẻ mà có ID tương ứng
+
+    }
+
+    .tenclass1.tenclass2    => Thẻ mà có đồng thời các class
+    
+    .tenclass#tenID     => Thẻ có đồng thời class và ID
+    #ID.tenclass 
+
+
+    Thẻ thì có thể có nhiều class nhưng ID thì chỉ có một và ID là duy nhất trên toàn trang web.
+
+
+    selector1, selector2, ... {
+
+    }   
+    => selector1, selector2 có cùng style
+    
+    selector1 selector2 {       => selector2 là con của selector1
+                                    Style sẽ được áp dụng cho selector2
+
+    }
+
+    selector1 > selector2{      => selector2 là con trực tiếp của selector1
+                                    Style áp dụng cho selector2
+
+    }
+
+
+
+    Liên kết CSS và HTML
+    - Viết CSS  trên HTML:
+        => Code CSS trong thẻ HTML hoặc trong thẻ style
+
+    - Viết ra file riêng .css
+
+    Style.css -> external
+            ||
+    <style> </style> -> internal
+            ||
+    Hiện = > Style trong thẻ HTML
+
+
+-->

@@ -1,0 +1,22 @@
+body{
+    background-color: darkgrey;
+}
+h1{
+    color:aquamarine !important;
+}
+.Welcome{
+    color: darkblue;
+    text-decoration: underline; 
+}
+
+#Tag-H2{
+    color: yellow;
+    font-size: 30px;
+}
+.class2{
+    color: orange;
+}
+
+ul > li{
+    color:mediumblue; 
+}

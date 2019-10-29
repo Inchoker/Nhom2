@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+ //Exercise 1
+    let loop = true;
+    let error = "Error command";
+        items = ["T-Shirt", "Sweater"];
+while(loop){
+        let act = prompt("Welcome to our shop, what do you want (C, R, U, D, E)?")
+        
+        if (act == "R") {
+            console.log("Our items:" + items);
+        }
+ 
+        else if ( (act == "C") && (act != "B") ) {
+            while (loop){
+            let them = prompt("Enter new items: (Enter B to turn back)");
+            if( them == "B") {
+                loop = "false";
+                break;
+            }
+            else {
+            items.push(them);
+            console.log("Our items:" + items);
+            }
+            
+        }
+        }
+        
+        else if ( (act == "U") && (act != "B") ) {
+            while(loop){  
+            let vitri = prompt("Update position? (Enter B to turn back)");
+            if( vitri == "B") {
+                loop = "false";
+                break;
+            }
+            else {
+            let capnhat = prompt("New item?");
+            items[Number(vitri) - 1] = capnhat;
+            console.log("Our items:" + items);
+                 }
+            }
+        }
+ 
+        else if ( (act == "D") && (act != "B") ) {
+            while(loop){
+            let vitri = prompt("Delete position? (Enter B to turn back)");
+            if( vitri == "B") {
+                loop = "false";
+                break;
+            }
+            else {
+            items.splice(Number(vitri) - 1,1);
+            console.log("Our items:" + items);
+        }
+        } 
+        } 
+ 
+        else if (act == "E"){
+            let loop = "false";
+            break;
+        }
+        else {
+            console.log(error);
+        }
+ 
+}
+
+    </script>
+</body>
+</html>
