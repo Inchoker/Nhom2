@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 function getVideo(){
     let xhr = new XMLHttpRequest();
-    let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=sungha%20jung%20and%20toms%20piano&type=video&key=AIzaSyC25wlU4AKd7qLgIVmugro1ZWZYbjUm4ZI&fbclid=IwAR1qnautC1LOm8tNUtC1peKRzckeC9xnObcmMlR0Dj8X_xFdEfw87MzBbKo";
+    let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=fingerstyle%20cover&type=video&key=AIzaSyC25wlU4AKd7qLgIVmugro1ZWZYbjUm4ZI&fbclid=IwAR1qnautC1LOm8tNUtC1peKRzckeC9xnObcmMlR0Dj8X_xFdEfw87MzBbKo";
     xhr.open("GET", url);
     xhr.onreadystatechange = function(result){
         if(this.readyState === 4 && this.status === 200){

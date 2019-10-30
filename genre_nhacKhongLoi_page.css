@@ -11,6 +11,12 @@ div.videothumbnail {
     width: 200px;
     height: 300px;
 }
+div.videothumbnail:hover{
+    background-color: #78909C;
+}
+div.desc:hover{
+    color: white;
+}
 
 div.videothumbnail:hover {
     border: 1px solid #777;

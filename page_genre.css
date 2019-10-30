@@ -41,6 +41,12 @@ div.videothumbnail {
     width: 300px;
     height: 400px;
 }
+div.videothumbnail:hover{
+    background-color: #E0F2F1;
+}
+div.desc:hover{
+    color: black;
+}
 
 div.videothumbnail img {
     width: 300px;
@@ -55,9 +61,6 @@ div.desc {
     height: 100%;
     color: white;
 }
-/* div.desc:hover{
-    background-color: black;
-} */
 
 .vungChon:hover {
     cursor: pointer;
