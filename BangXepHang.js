@@ -90,3 +90,5 @@ $(document).ready(function() {
 
     // document ready  
 });
+
+//Khi youtube khong chay, hien len thong bao
