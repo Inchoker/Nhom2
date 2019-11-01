@@ -4,6 +4,7 @@
 <head>
     <title>Music Web</title>
     <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
@@ -20,7 +21,7 @@
             <a href="music_web.html">Trang chủ</a>
             <a href="BangXepHang.html">Bảng xếp hạng</a>
             <a href="genre.html">Thể loại</a>
-            <a href="">Nghệ sĩ</a>
+            <a href="AuMySingers.html">Nghệ sĩ</a>
         </div>
     </div>
     <!-- Phần your feeling today -->
@@ -29,9 +30,15 @@
         <!-- <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"> -->
         <div class="your-feeling">
             <div id="happy">
-                <div class="after-click" style="display: none;"></div>
+                <!-- <div class="after-click" style="display: none;"></div>
                 <img class="mood-icon" src="data:image/png;base64,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">
-                <div class="txt-mood-icon">Happy</div>
+                <div class="txt-mood-icon">Happy</div> -->
+                <div class="videothumbnail">
+                    <span data-toggle="tooltip" data-placement="right" title="Click to listen on youtube">
+                        <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="https://i.ytimg.com/vi/zdHL5BJfxPQ/hqdefault.jpg" alt="HÃY TRAO CHO ANH" data-id="zdHL5BJfxPQ">
+                        <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="zdHL5BJfxPQ">HÃY TRAO CHO ANH</div>
+                    </span>
+                </div>
             </div>
             <div id="sad">
                 <div class="after-click" style="display: none;"></div>
@@ -45,6 +52,30 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+
+                <div class="modal-body">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen="allowfullscreen" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <!-- Các tab trong trang chủ -->
     <script src="search_bar.js"></script>
     <!-- <script src="music_web.js"></script> -->
