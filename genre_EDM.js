@@ -48,7 +48,7 @@ function getVideo(){
                             <span data-toggle="tooltip" data-placement="right" title="Click to listen on youtube">
 
                                 <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="${image}" alt="${name}" data-id="${id}">
-                                <div class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="${id}">${name}</div>
+                                <span class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="${id}">${name}</span>
 
                             </span>
                         </div>`;

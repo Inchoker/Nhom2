@@ -1,40 +1,47 @@
-.border{
+.border {
     width: 100%;
     height: 500px;
     margin-top: 30px;
     background-image: url('https://miro.medium.com/max/2925/1*xdIqlH52ebNcLoGF9xzCcg.png');
 }
-.border .your-feeling{
+
+.border .your-feeling {
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-around;
-    margin-top: 70px;;
+    margin-top: 70px;
 }
-h1{
+
+h1 {
     margin-top: 50px;
     text-align: center;
     color: white;
 }
-.menu-bar{
+
+.menu-bar {
     background-color: #90A4AE;
 }
-.menu-bar .menu-bar-inner{
+
+.menu-bar .menu-bar-inner {
     width: 100%;
     height: 55px;
     display: flex;
     justify-content: space-around;
 }
+
 .menu-bar .menu-bar-inner a {
     color: white;
     text-decoration: none;
-
 }
-body{
+
+body {
+    padding: 0;
     width: 100%;
     height: 100%;
     background-size: over;
 }
+
 .menu-bar #search-box {
     width: 400px;
     box-sizing: border-box;
@@ -42,7 +49,8 @@ body{
     border-radius: 10px;
     margin-left: 35%;
 }
-.border .your-feeling .txt-mood-icon{
+
+.border .your-feeling .txt-mood-icon {
     width: 250px;
     text-align: center;
     margin-top: 10px;
