@@ -55,12 +55,6 @@ function showTrend(json) {
 
 //Play youtube in modal style
 $(document).ready(function() {
-    // // thay pointer khi mouse over 
-    // $(document).on("mouseover", ".vungChon", function() {
-    //     $(".vungChon:hover").css("cursor", "pointer")
-    // })
-
-    // Gets the video src from the data-id on each img tag
 
     let $videoSrc;
     $(document).on('click', '.vungChon', function() {
@@ -80,12 +74,19 @@ $(document).ready(function() {
     // stop playing the youtube video when I close the modal
     $('#myModal').on('hide.bs.modal', function(e) {
         // a poor man's stop video
+
+
         $("#video").attr('src', $videoSrc);
+
+
     })
 
     $(document).on("click", "#popUp", function() {
         $(".pUCV").fadeOut();
+        localStorage.setItem("clicked", 1)
+        console.log(localStorage.getItem("clicked"))
     })
+
 
 
 
@@ -94,4 +95,7 @@ $(document).ready(function() {
     // document ready  
 });
 
-//Click to dismiss popup
+//neu clicked =1 thi k show popup
+if (localStorage.getItem("clicked") == 1) {
+    document.getElementsByClassName("pUCV")[0].style.display = "none";
+}

@@ -59,6 +59,7 @@ div.videothumbnail img {
     padding: 0;
     border: 0;
     margin-bottom: 0;
+    display: block;
 }
 
 span.desc {
@@ -109,4 +110,11 @@ h1 {
 span.cri {
     margin: auto;
     display: table;
+}
+
+#dismiss {
+    margin: auto;
+    display: table;
+    font-size: 25px;
+    font-style: oblique;
 }
