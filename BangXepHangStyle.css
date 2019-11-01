@@ -1,23 +1,52 @@
+/* css popup */
+
+.pUCV {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+    z-index: 9999;
+}
+
+#popUp {
+    position: fixed;
+    top: 150px;
+    left: 50%;
+    cursor: pointer;
+    width: 350px;
+    height: auto;
+    display: inline-block;
+    background-color: white;
+    margin: 0 0 0 -175px;
+}
+
+
 /* css cua thumbnail */
 
-body {
-    height: 100%;
+div.body1 {
+    width: 100%;
+    position: relative;
     background-image: url('https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
 }
 
 #BangXepHang {
+    position: relative;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
+    text-align: center;
 }
 
 div.videothumbnail {
-    float: left;
     margin: 5px;
-    width: 380px;
+    width: 360px;
     height: 330px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
 }
 
 div.videothumbnail:hover {
@@ -45,10 +74,6 @@ span.desc {
 
 /* css cua modal  */
 
-body {
-    margin: 2rem;
-}
-
 .modal-dialog {
     max-width: 800px;
     margin: 30px auto;
@@ -71,11 +96,17 @@ body {
 }
 
 
-/* css khac */
+/* css tieu de */
 
 h1 {
     color: white;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
     width: 100%;
+    position: relative;
+}
+
+span.cri {
+    margin: auto;
+    display: table;
 }

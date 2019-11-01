@@ -83,6 +83,9 @@ $(document).ready(function() {
         $("#video").attr('src', $videoSrc);
     })
 
+    $(document).on("click", "#popUp", function() {
+        $(".pUCV").fadeOut();
+    })
 
 
 
@@ -90,3 +93,5 @@ $(document).ready(function() {
 
     // document ready  
 });
+
+//Click to dismiss popup

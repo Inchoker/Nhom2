@@ -11,42 +11,61 @@
 </head>
 
 <body>
-    <h1>
-        BẢNG XẾP HẠNG</h1>
-    <div id="BangXepHang">BXH
+    <div class="pUCV">
+
+        <div id="popUp" style="align-content: center">
+
+            <img src="./CRI/cri.jpg" alt="copyright infringe">
+            <br>
+            <span class="cri">Vì lý do bản quyền, một vài Video sẽ không thể xem trực tiếp trên trang web này, hãy truy cập Youtube trực tiếp để xem trong trường hợp bạn không xem được
+                </span>
+            <span id="dismiss"><  Click to dismiss  ></Click></span>
+
+
+        </div>
 
     </div>
+    <div class="body1">
+
+        <br>
+        <h1> BẢNG XẾP HẠNG</h1>
+        <div id="BangXepHang"></div>
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
 
 
-                <div class="modal-body">
+                    <div class="modal-body">
 
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" allowfullscreen="allowfullscreen" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" allowfullscreen="allowfullscreen" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+
+
                     </div>
 
-
                 </div>
-
             </div>
         </div>
+
+
+        <!-- youtube api -->
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="BangXepHang.js"></script>
     </div>
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="BangXepHang.js"></script>
 
 </body>
 
