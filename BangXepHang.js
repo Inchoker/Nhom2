@@ -84,7 +84,6 @@ $(document).ready(function() {
     $(document).on("click", "#popUp", function() {
         $(".pUCV").fadeOut();
         localStorage.setItem("clicked", 1)
-        console.log(localStorage.getItem("clicked"))
     })
 
 
