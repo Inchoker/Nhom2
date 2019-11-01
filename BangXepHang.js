@@ -83,6 +83,9 @@ $(document).ready(function() {
         $("#video").attr('src', $videoSrc);
     })
 
+    $(document).on("click", "#popUp", function() {
+        $(".pUCV").fadeOut();
+    })
 
 
 
@@ -91,4 +94,4 @@ $(document).ready(function() {
     // document ready  
 });
 
-//Khi youtube khong chay, hien len thong bao
+//Click to dismiss popup
