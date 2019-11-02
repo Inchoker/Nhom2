@@ -1,6 +1,8 @@
 h1 {
-    text-align: center;
     color: white;
+    height: 800px;
+    font-size: 250px;
+    text-align: center;
 }
 
 #txtvideo {
@@ -27,7 +29,7 @@ div.videothumbnail {
 }
 
 div.videothumbnail:hover {
-    transform: scale(1.03);
+    transform: scale(1.04);
 }
 
 div.videothumbnail img {
