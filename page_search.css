@@ -1,0 +1,73 @@
+#txtvideo {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+#txt-search-inner {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.button {
+    width: 10%;
+}
+
+div.videothumbnail {
+    margin: 5px;
+    width: 360px;
+    height: 320px;
+    display: inline-block;
+    position: relative;
+}
+
+div.videothumbnail:hover {
+    transform: scale(1.04);
+}
+
+div.videothumbnail img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border: 0;
+}
+
+span.desc {
+    text-align: center;
+    margin: auto;
+    display: table;
+    color: black;
+}
+
+.vungChon:hover {
+    cursor: pointer;
+}
+
+
+/* css cua modal  */
+
+body {
+    margin: 2rem;
+}
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.close {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: 999;
+    font-size: 5rem;
+    font-weight: normal;
+    color: white;
+    opacity: 1;
+}
