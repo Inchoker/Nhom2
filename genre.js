@@ -8,7 +8,7 @@ $(document).ready(function() {
     //     $videoSrc = $(this).data("id");
     // });
     // console.log($videoSrc);
-    $(document).on('click', '.vungChon', function(){
+    $(document).on('click', '.vungChon', function() {
         $videoSrc = $(this).data('id');
     });
 
@@ -28,3 +28,11 @@ $(document).ready(function() {
         $("#video").attr('src', $videoSrc);
     })
 })
+
+function goBack() {
+    window.history.back();
+}
+
+function goForward() {
+    window.history.forward();
+}

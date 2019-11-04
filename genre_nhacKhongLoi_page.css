@@ -20,6 +20,10 @@ body {
     width: 100%;
 }
 
+.button {
+    width: 10%;
+}
+
 div.videothumbnail {
     margin: 5px;
     width: 360px;

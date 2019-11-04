@@ -60,3 +60,7 @@ function getVideo() {
     xhr.send();
 }
 getVideo();
+
+function goBack() {
+    window.history.back();
+}
