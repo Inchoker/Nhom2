@@ -12,7 +12,7 @@ h1 {
 }
 
 body {
-    background-image: url('/Fundamental/demo_music_web/genreImage/acoustic/acoustic.jpg');
+    background-image: url('https://images.unsplash.com/photo-1462965326201-d02e4f455804?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
