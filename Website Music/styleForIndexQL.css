@@ -1,0 +1,54 @@
+/* Thanh menu */
+.app-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #fafbfc;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    z-index: 10;
+    transition: all .2s;
+    box-shadow: rgba(4, 9, 20, 0.03) 0px 0.46875rem 2.1875rem, rgba(4, 9, 20, 0.03) 0px 0.9375rem 1.40625rem, rgba(4, 9, 20, 0.05) 0px 0.25rem 0.53125rem, rgba(4, 9, 20, 0.03) 0px 0.125rem 0.1875rem;
+}
+.app-main{
+    flex: 1;
+    display: flex;
+    z-index: 8;
+    position: relative;
+    padding-top: 60px;
+
+}
+.brand{
+    padding: 10px 0px;
+    background-color: brown;
+}
+
+.table-ds{
+    padding-top: 500px ;
+
+
+}
+
+.chuc-nang{
+    margin-bottom: 10px;
+}
+
+.container{
+    background: rgba(255, 255, 255, 0.45);
+}
+
+.form-control{
+    margin-top: 10px;
+    width:80%;
+}
+
+.input-group-btn{
+    padding-top:10px
+}
+
+.input-group{
+    padding-bottom: 10px;
+}
+
