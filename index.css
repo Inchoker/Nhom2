@@ -69,6 +69,12 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+    .w3-hide-small {
+        display: block!important;
+    }
+}
+
 button,
 input {
     padding: 8px 26px;
@@ -294,4 +300,8 @@ h6 {
     color: white;
     text-align: center;
     margin: 0px 0px 0px;
+}
+
+@media (max-width: 600px) .w3-hide-small {
+    display: block;
 }
