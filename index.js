@@ -178,7 +178,6 @@ function topFunction() {
 //function cua searchbox
 let input = document.getElementById("searchBox");
 input.addEventListener("keyup", function(e) {
-
     if (e.keyCode === 13) {
         localStorage.setItem("keyWord", input.value);
 

@@ -63,7 +63,7 @@ function getVideo() {
 }
 
 function goBack() {
-    window.history.back();
+    window.close();
 }
 
 if (typeof localStorage.getItem("keyWord" != "undefined")) {
