@@ -54,17 +54,16 @@ function showTrend(json) {
 
 
 //Play youtube in modal style
-$(document).ready(function() {
+$(window).on("load", function() {
 
     let $videoSrc;
-    $(document).on('click', '.vungChon', function() {
+    $(document).on('click', '.vungChon', (function() {
         $videoSrc = $(this).data("id");
-    });
+    }));
 
 
     // when the modal is opened autoplay it  
-    $('#myModal').on('shown.bs.modal', function(e) {
-        console.log('show modal');
+    $('#myModal').on('shown.bs.modal', function() {
         // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
         $("#video").attr('src', "https://www.youtube.com/embed/" + $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
     })
@@ -72,7 +71,7 @@ $(document).ready(function() {
 
 
     // stop playing the youtube video when I close the modal
-    $('#myModal').on('hide.bs.modal', function(e) {
+    $('#myModal').on('hide.bs.modal', function() {
         // a poor man's stop video
 
 
