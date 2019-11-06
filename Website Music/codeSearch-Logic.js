@@ -35,7 +35,7 @@ function getVideo(json) {
  
     for (let i = 0; i < videoIDs.length; i++) {
         document.getElementById("list-videos").innerHTML +=
-        ` <iframe title='YouTube video player' width='640' height='390' src="https://www.youtube.com/embed/` + videoIDs[i] + `"` +
+        ` <iframe title='YouTube video player' width='300' height='300' src="https://www.youtube.com/embed/` + videoIDs[i] + `"` +
                 `frameborder='0' allowFullScreen> </iframe> ` 
 
     }
