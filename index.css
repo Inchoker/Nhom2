@@ -285,3 +285,13 @@ h6 {
     background-color: #555;
     /* Add a dark-grey background on hover */
 }
+
+.footer p {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin: 0px 0px 0px;
+}
