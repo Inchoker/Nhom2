@@ -37,6 +37,7 @@ h1 {
     height: 800px;
     font-size: 350px;
     text-align: center;
+    margin: 0;
 }
 
 #txtvideo {
@@ -45,15 +46,10 @@ h1 {
     text-align: center;
 }
 
-
-/* body {
-    background-image: url('https://images.unsplash.com/photo-1462965326201-d02e4f455804?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-} */
+body,
+html {
+    margin: 0!important;
+}
 
 div.body1 {
     width: 100%;
