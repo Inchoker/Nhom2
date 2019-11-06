@@ -65,3 +65,16 @@ function getVideo() {
 function goBack() {
     window.history.back();
 }
+
+if (typeof localStorage.getItem("keyWord" != "undefined")) {
+    $(window).on('load', function() {
+        document.getElementById("search-box").value = localStorage.getItem("keyWord");
+        getVideo();
+    })
+}
+$(window).on('unload', function() {
+    localStorage.removeItem("keyWord");
+
+
+})
+console.log(localStorage.getItem("keyWord"))

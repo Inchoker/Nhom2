@@ -174,3 +174,15 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//function cua searchbox
+let input = document.getElementById("searchBox");
+input.addEventListener("keyup", function(e) {
+
+    if (e.keyCode === 13) {
+        localStorage.setItem("keyWord", input.value);
+
+
+        window.open("./page_search.html", '_blank')
+    }
+})
