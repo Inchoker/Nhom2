@@ -47,9 +47,17 @@
 }
 
 .button {
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 10%;
+    position: relative;
+    width: 25%;
+    display: inline-block;
+}
+
+.button-fixed {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 20%;
+    z-index: 99;
 }
 
 .text-genre a {
