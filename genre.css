@@ -41,7 +41,7 @@ div.body1 {
     width: 100%;
     position: fixed;
     z-index: -999;
-    background-image: url('https://images.unsplash.com/photo-1487180144351-b8472da7d491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80');
+    background-image: url('https://images.unsplash.com/photo-1477233534935-f5e6fe7c1159?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,7 +104,7 @@ div.videothumbnail {
 }
 
 div.videothumbnail:hover {
-    transform: scale(1.04);
+    transform: scale(1.03);
 }
 
 div.desc:hover {

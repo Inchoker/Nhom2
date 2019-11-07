@@ -46,7 +46,7 @@ function getVideo() {
                 name = object.items[j].snippet.title;
                 image = object.items[j].snippet.thumbnails.high.url;
                 total += `<div class="videothumbnail">
-                            <span data-toggle="tooltip" data-placement="right" title="Click to listen on youtube">
+                            <span data-toggle="tooltip" data-placement="top" title="Click to listen on youtube">
 
                                 <img class="thumbnail vungChon" data-toggle="modal" data-target="#myModal" src="${image}" alt="${name}" data-id="${id}">
                                 <span class="desc vungChon" target="_top" data-toggle="modal" data-target="#myModal" data-id="${id}">${name}</span>
@@ -55,6 +55,8 @@ function getVideo() {
                         </div>`;
             }
             document.getElementById("txtvideo").innerHTML = total;
+            $('[data-toggle="tooltip"]').tooltip();
+
         }
     }
     xhr.send();
