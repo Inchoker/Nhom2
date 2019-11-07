@@ -30,8 +30,8 @@ let artist = [
         'sinhNhat': '05/07/1994',
         'nation': 'Việt Nam',
         'inFor': '<p> Sinh ra và lớn lên tại một vùng quê của tỉnh Thái Bình. Vốn sở hữu “gen di truyền” từ người mẹ của mình, một nghệ sĩ biểu diễn hát chèo tại Nhà hát Thái Bình nên Tùng đã bộc lộ khả năng âm nhạc của mình ngay từ khi còn là một cậu bé mới chập chững những bước đi đầu tiên. <p>Năm 2012, Sơn Tùng quyết định thi tuyển vào Nhạc viện TPHCM, một trong những ngôi trường có tỉ lệ chọi vô cùng “khốc liệt”.Mặc dù giọng hát của Sơn Tùng không có một chút kỹ thuật nào nhưng chỉ với một tháng luyện thi chăm chỉ, quên cả việc ăn ngủ, Sơn Tùng đã đỗ thủ khoa Nhạc viện TPHCM chuyên ngành Thanh nhạc với số điểm 25,5.</p >Ít năm sau, những sản phẩm âm nhạc liên tiếp được chàng trai gốc Thái Bình tung ra thị trường như “Em của ngày hôm qua”, “Chạy ngay đi”, “Lạc trôi”, … đã trở thành những sản phẩm đình đám nhất của thị trường âm nhạc Việt Nam, ngoài ra những sản phẩm này cũng lan tỏa sang cả một số quốc gia khác trên thế giới.</p > ',
-        'image': '<img src="https://i.imgur.com/hg6ukiT.jpg" class="rounded" width="50" height="50">',
-        'anhBackGround': '<img src="https://i.imgur.com/fQFDONx.jpg" class="rounded" width="50" height="50">',
+        'image': '<img src="https://i.imgur.com/hg6ukiT.jpg" class="rounded" >',
+        'anhBackGround': '<img src="https://i.imgur.com/fQFDONx.jpg" class="rounded" >',
         'videoId': [],
         'thumbnail': [],
     },
@@ -42,8 +42,8 @@ let artist = [
         'sinhNhat': '10/09/1992',
         'nation': 'Việt Nam',
         'inFor': '<p>Soobin Hoàng Sơn (tên thật Nguyễn Hoàng Sơn, sinh ngày 10/09/1992) là một ca sỹ, nhạc sỹ,rapper ở Việt Nam.Sau khi đoạt ngôi á quân Ngôi sao Việt 2014 và để lại dấu ấn riêng với giải Bạc chung cuộc tại The Remix mùa hai, Soobin Hoàng Sơn bắt đầu tập trung cho con đường ca hát chuyên nghiệp.<p>Từ trước đến nay, giọng ca sinh năm 1992 theo đuổi dòng nhạc RnB và có chỗ đứng nhất định trên thị trường nhạc Việt. Dù vậy, phải đợi đến khi rẽ lối hát pop ballad, vào tháng 10/2016, anh mới có ca khúc hit đầu tiên trong sự nghiệp, Phía sau một cô gái, do nhạc sĩ Tiên Cookie sáng tác. Ca khúc nhanh chóng tạo được cơn sốt và được cộng đồng đón nhận, hưởng ứng nhiệt tình.</p>Tiếp nối thành công của bản hot Phía Sau Một Cô Gái, Soobin tiếp tục cho ra mắt thêm những sản phẩm âm nhạc đầy chất lượng trong năm 2017: Đi Để Trở Về, Đi Và Yêu, Anh Đã Quen Với Cô Đơn.</p>',
-        'image': '<img src="https://i.imgur.com/teNUyBC.jpg" class="rounded" width="50" height="50">',
-        'anhBackGround': '<img src="https://i.imgur.com/hU3tZ6l.jpg" class="rounded" width="50" height="50">',
+        'image': '<img src="https://i.imgur.com/teNUyBC.jpg" class="rounded" >',
+        'anhBackGround': '<img src="https://i.imgur.com/hU3tZ6l.jpg" class="rounded" >',
         'videoId': [],
         'thumbnail': [],
     },
@@ -210,7 +210,6 @@ function search() {
                 currentArtist.thumbnail +
                 '<td><button class="btn btn-primary" data-artist-name = "' + currentArtist.name + '" onclick="suaInfor(event)"> Sửa </button>' +
                 '<button class="btn btn-info" data-artist-name = "' + currentArtist.name + '" onclick = "xoaInfor(event)"> Xóa </button>' +
-                // '<button class="btn btn-warning" id = '+`myButton${i}` + ' data-artist-name = "' + currentArtist.name + ` onclick = "bangChiTiet(event,``${currentArtist.name}`+ ")> Chi tiết </button>  </td> </tr>"
                 '<button class="btn btn-warning" class = "MyButton" +  data-artist-name = "' + currentArtist.name + '" onclick = bangChiTiet(event)> Chi tiết </button>  </td> </tr>'
 
         }
@@ -236,8 +235,8 @@ function themNgheSi() {
         'sinhNhat': birthDay,
         'nation': nation,
         'inFor': thongTin,
-        'image': '<img class="rounded" width="50" height="50" src=" ' + image + '">',
-        'anhBackGround': '<img class="rounded" width="50" height="50" src=" ' + anhNen + '">',
+        'image': '<img class="rounded"  src=" ' + image + '">',
+        'anhBackGround': '<img class="rounded"  src=" ' + anhNen + '">',
         'videoId': [],
         'thumbnail': [],
     })
@@ -400,7 +399,7 @@ function bangChiTiet(e) {
 
             let listAnhVideo = a[i].thumbnail;
             for (let k = 0; k < listAnhVideo.length; k++) {
-                document.getElementById('anh-video' + k).innerHTML += '<td><img class="rounded" width="80%" height="250px" style ="padding-left:"120px"" src=" ' + listAnhVideo[k] + '"</td>' ;
+                document.getElementById('anh-video' + k).innerHTML += '<td><img class="anh-thumbnail"  src=" ' + listAnhVideo[k] + '"</td>' ;
                 console.log(listAnhVideo[k])
             }
         }
