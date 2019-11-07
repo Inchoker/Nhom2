@@ -46,7 +46,7 @@
   }
 
   /* Hiệu ứng bóng mờ */
-  img:hover
+  input:hover
 {
      opacity: 0.3;
      filter: alpha(opacity=30);
