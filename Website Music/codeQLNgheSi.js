@@ -23,38 +23,45 @@
 // khi thao tác: thêm, xem, sửa, xóa thì cứ lấy dữ liệu từ local
 // còn cái mảng gốc artist trong file này cứ keme nó =))
 
-// let artist = [
-//     {
-//         'name': 'Sơn Tùng M-TP',
-//         'tenThat': 'Nguyễn Thanh Tùng',
-//         'sinhNhat': '05/07/1994',
-//         'nation': 'Việt Nam',
-//         'inFor': '<p> Sinh ra và lớn lên tại một vùng quê của tỉnh Thái Bình. Vốn sở hữu “gen di truyền” từ người mẹ của mình, một nghệ sĩ biểu diễn hát chèo tại Nhà hát Thái Bình nên Tùng đã bộc lộ khả năng âm nhạc của mình ngay từ khi còn là một cậu bé mới chập chững những bước đi đầu tiên. <p>Năm 2012, Sơn Tùng quyết định thi tuyển vào Nhạc viện TPHCM, một trong những ngôi trường có tỉ lệ chọi vô cùng “khốc liệt”.Mặc dù giọng hát của Sơn Tùng không có một chút kỹ thuật nào nhưng chỉ với một tháng luyện thi chăm chỉ, quên cả việc ăn ngủ, Sơn Tùng đã đỗ thủ khoa Nhạc viện TPHCM chuyên ngành Thanh nhạc với số điểm 25, 5.</p >Ít năm sau, những sản phẩm âm nhạc liên tiếp được chàng trai gốc Thái Bình tung ra thị trường như “Em của ngày hôm qua”, “Chạy ngay đi”, “Lạc trôi”, … đã trở thành những sản phẩm đình đám nhất của thị trường âm nhạc Việt Nam, ngoài ra những sản phẩm này cũng lan tỏa sang cả một số quốc gia khác trên thế giới.</p > ',
-//         'image': '<img src="https://i.imgur.com/hg6ukiT.jpg" class="rounded" width="50" height="50">',
-//         'anhBackGround': '<img src="https://i.imgur.com/fQFDONx.jpg" class="rounded" width="50" height="50">',
-//         'videoId': ['j__Q13iAxNk', 'wnSNyE2hVu4'],
-//         'thumbnail': [],
-//     },
-
-//     {
-//         'name': 'Soobin Hoàng Sơn',
-//         'tenThat': 'Nguyễn Hoàng Sơn',
-//         'sinhNhat': '10/09/1992',
-//         'nation': 'Việt Nam',
-//         'inFor': '<p>Soobin Hoàng Sơn (tên thật Nguyễn Hoàng Sơn, sinh ngày 10/09/1992) là một ca sỹ, nhạc sỹ,rapper ở Việt Nam.Sau khi đoạt ngôi á quân Ngôi sao Việt 2014 và để lại dấu ấn riêng với giải Bạc chung cuộc tại The Remix mùa hai, Soobin Hoàng Sơn bắt đầu tập trung cho con đường ca hát chuyên nghiệp.<p>Từ trước đến nay, giọng ca sinh năm 1992 theo đuổi dòng nhạc RnB và có chỗ đứng nhất định trên thị trường nhạc Việt. Dù vậy, phải đợi đến khi rẽ lối hát pop ballad, vào tháng 10/2016, anh mới có ca khúc hit đầu tiên trong sự nghiệp, Phía sau một cô gái, do nhạc sĩ Tiên Cookie sáng tác. Ca khúc nhanh chóng tạo được cơn sốt và được cộng đồng đón nhận, hưởng ứng nhiệt tình.</p>Tiếp nối thành công của bản hot Phía Sau Một Cô Gái, Soobin tiếp tục cho ra mắt thêm những sản phẩm âm nhạc đầy chất lượng trong năm 2017: Đi Để Trở Về, Đi Và Yêu, Anh Đã Quen Với Cô Đơn.</p>',
-//         'image': '<img src="https://i.imgur.com/teNUyBC.jpg" class="rounded" width="50" height="50">',
-//         'anhBackGround': '<img src="https://i.imgur.com/hU3tZ6l.jpg" class="rounded" width="50" height="50">',
-//         'videoId': ['7kP8Qnu2TJ8', 'HK31DrqpztM&bpctr=1572624414'],
-//         'thumbnail': [],
-//     },
-// ];
+let artist = [
+    {
+        'name': 'Sơn Tùng M-TP',
+        'tenThat': 'Nguyễn Thanh Tùng',
+        'sinhNhat': '05/07/1994',
+        'nation': 'Việt Nam',
+        'inFor': '<p> Sinh ra và lớn lên tại một vùng quê của tỉnh Thái Bình. Vốn sở hữu “gen di truyền” từ người mẹ của mình, một nghệ sĩ biểu diễn hát chèo tại Nhà hát Thái Bình nên Tùng đã bộc lộ khả năng âm nhạc của mình ngay từ khi còn là một cậu bé mới chập chững những bước đi đầu tiên. <p>Năm 2012, Sơn Tùng quyết định thi tuyển vào Nhạc viện TPHCM, một trong những ngôi trường có tỉ lệ chọi vô cùng “khốc liệt”.Mặc dù giọng hát của Sơn Tùng không có một chút kỹ thuật nào nhưng chỉ với một tháng luyện thi chăm chỉ, quên cả việc ăn ngủ, Sơn Tùng đã đỗ thủ khoa Nhạc viện TPHCM chuyên ngành Thanh nhạc với số điểm 25,5.</p >Ít năm sau, những sản phẩm âm nhạc liên tiếp được chàng trai gốc Thái Bình tung ra thị trường như “Em của ngày hôm qua”, “Chạy ngay đi”, “Lạc trôi”, … đã trở thành những sản phẩm đình đám nhất của thị trường âm nhạc Việt Nam, ngoài ra những sản phẩm này cũng lan tỏa sang cả một số quốc gia khác trên thế giới.</p > ',
+        'image': '<img src="https://i.imgur.com/hg6ukiT.jpg" class="rounded" id="singer1-ava-boder" />',
+        'imageUrl': 'https://i.imgur.com/hg6ukiT.jpg',
+        'anhBackGround': '<img src="https://i.imgur.com/fQFDONx.jpg" class="rounded" id="singer1-cover-boder" />',
+        'videoId': [],
+        'thumbnail': [],
+    },
+    // 'j__Q13iAxNk'
+    {
+        'name': 'Soobin Hoàng Sơn',
+        'tenThat': 'Nguyễn Hoàng Sơn',
+        'sinhNhat': '10/09/1992',
+        'nation': 'Việt Nam',
+        'inFor': '<p>Soobin Hoàng Sơn (tên thật Nguyễn Hoàng Sơn, sinh ngày 10/09/1992) là một ca sỹ, nhạc sỹ,rapper ở Việt Nam.Sau khi đoạt ngôi á quân Ngôi sao Việt 2014 và để lại dấu ấn riêng với giải Bạc chung cuộc tại The Remix mùa hai, Soobin Hoàng Sơn bắt đầu tập trung cho con đường ca hát chuyên nghiệp.<p>Từ trước đến nay, giọng ca sinh năm 1992 theo đuổi dòng nhạc RnB và có chỗ đứng nhất định trên thị trường nhạc Việt. Dù vậy, phải đợi đến khi rẽ lối hát pop ballad, vào tháng 10/2016, anh mới có ca khúc hit đầu tiên trong sự nghiệp, Phía sau một cô gái, do nhạc sĩ Tiên Cookie sáng tác. Ca khúc nhanh chóng tạo được cơn sốt và được cộng đồng đón nhận, hưởng ứng nhiệt tình.</p>Tiếp nối thành công của bản hot Phía Sau Một Cô Gái, Soobin tiếp tục cho ra mắt thêm những sản phẩm âm nhạc đầy chất lượng trong năm 2017: Đi Để Trở Về, Đi Và Yêu, Anh Đã Quen Với Cô Đơn.</p>',
+        'image': '<img src="https://i.imgur.com/teNUyBC.jpg" class="rounded" id="singer1-ava-boder" />',
+        'imageUrl': 'https://i.imgur.com/teNUyBC.jpg',
+        'anhBackGround': '<img src="https://i.imgur.com/hU3tZ6l.jpg" class="rounded" id="singer1-cover-boder" />',
+        'videoId': [],
+        'thumbnail': [],
+    },
+    // '7kP8Qnu2TJ8', 'HK31DrqpztM&bpctr=1572624414'
+];
 
 // Đẩy dữ liệu lên localstorage
-// console.log(JSON.stringify(artist[0]))
+
+// localStorage.setItem('key',JSON.stringify(artist));
+// console.log(localStorage.getItem('key'));
+// Dùng để test
+// localStorage.clear();
 
 // Chuyển sang dạng string để lưu trên localstorage
-// for(let i = 0 ; i < artist.length ; i ++ ){
-//     localStorage.setItem("key", JSON.stringify(artist[i]))   
+// for (let i = 0; i < artist.length; i++) {
+//     localStorage.setItem(`artist${i + 1}`, JSON.stringify(artist[i]));
 // }
 ////////////////////////////////////////////////////////////////
 // localStorage.setItem("name", "Sơn Tùng M-TP");
@@ -67,82 +74,89 @@
 // localStorage.setItem("videoId", ['j__Q13iAxNk', 'wnSNyE2hVu4']);
 // localStorage.setItem("thumbnail", []);
 
+
+// console.log(localStorage.length)
+
+//Khởi tạo mảng để chứa dữ liệu lấy từ local storage
+var a = [];
+
 function getData() {
-    let a =  JSON.parse(localStorage.getItem("key"));
-    console.log(a);
-    // for (let i = 0; i < artist.length; i++) {
-    //     let xhr = new XMLHttpRequest();
-    //     let keyword = '20 bài hát trending của' + artist[i].name + ' Official Music Video';
 
-    //     let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=" +
-    //         keyword + "&type=video&key=AIzaSyA0EXoz8yj9TA8GzYy_60N8umR-c2I6PI4"
-    //     // AIzaSyA0EXoz8yj9TA8GzYy_60N8umR-c2I6PI4
-    //     // AIzaSyCH5dyd-hWLc72rIxLtnLCOI_7k0PsaDac
+    for (let i = 1; i <= localStorage.length; i++) {
+        a.push(JSON.parse(localStorage.getItem(`artist${i}`)));
+    }
 
-    //     xhr.open("GET", url);
-    //     xhr.onreadystatechange = function () {
-    //         if (this.readyState === 4 && this.status === 200) {
-    //             getInfor(this.responseText, artist[i]);
-
-    //         }
-    //     }
-    //     xhr.send();
-    // }
     for (let i = 0; i < a.length; i++) {
         let xhr = new XMLHttpRequest();
         let keyword = '20 bài hát trending của' + a[i].name + ' Official Music Video';
+        // console.log(a[i].name)
 
         let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=" +
-            keyword + "&type=video&key=AIzaSyA0EXoz8yj9TA8GzYy_60N8umR-c2I6PI4"
+            keyword + "&type=video&key=AIzaSyA-Y_AEsinRIRFF73D76sLu4mid4xgqshM"
         // AIzaSyA0EXoz8yj9TA8GzYy_60N8umR-c2I6PI4
         // AIzaSyCH5dyd-hWLc72rIxLtnLCOI_7k0PsaDac
+        // AIzaSyA-Y_AEsinRIRFF73D76sLu4mid4xgqshM
 
         xhr.open("GET", url);
         xhr.onreadystatechange = function () {
             if (this.readyState === 4 && this.status === 200) {
                 getInfor(this.responseText, a[i]);
+                localStorage.setItem(`artist${i + 1}`, JSON.stringify(a[i]))
 
             }
         }
         xhr.send();
     }
+    console.log(a);
+
+
+    // for (let i = 0; i < a.length; i++) {
+    //     localStorage.setItem(`artist${i + 1}`, JSON.stringify(a[i]))
+    // }
+
+
 }
 
 function getDataCurrentArtist(currentArtist) {
+    // console.log(currentArtist)
     let xhr = new XMLHttpRequest();
     let keyword = '20 bài hát trending của' + currentArtist.name + ' Official Music Video';
     let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=" +
-        keyword + "&type=video&key=AIzaSyCH5dyd-hWLc72rIxLtnLCOI_7k0PsaDac"
+        keyword + "&type=video&key=AIzaSyA-Y_AEsinRIRFF73D76sLu4mid4xgqshM"
     xhr.open("GET", url);
     xhr.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             getInfor(this.responseText, currentArtist);
+            localStorage.setItem(`artist${a.length}`, JSON.stringify(currentArtist));
         }
     }
     xhr.send();
+
+    // for (let i = 0; i < a.length; i++) {
+    //     localStorage.setItem(`artist${i + 1}`, JSON.stringify(a[i]))
+    // }
 }
-//     }
-// }
+
 
 // getData();
 // Hiển thị thông tin từng nghệ sĩ ra màn hình
 function displayInfor() {
     document.getElementById('table-content').innerHTML = ''
-    for (let i = 0; i < artist.length; i++) {
+    for (let i = 0; i < a.length; i++) {
         document.getElementById('table-content').innerHTML +=
-            '<tr> <th scope="row">' + (i + 1) + '</th> <td>' + artist[i].name +
-            '</td><td>' + artist[i].tenThat +
-            '</td><td>' + artist[i].sinhNhat +
-            '</td><td>' + artist[i].nation +
-            '</td><td>' + artist[i].inFor +
-            '</td><td>' + artist[i].image +
-            '</td><td>' + artist[i].anhBackGround +
-            '</td><td class = "vid-ids">' + artist[i].videoId + '<br/>' +
-            '</td><td class = "anh-vid">' +
-            artist[i].thumbnail +
-            '<td><button class="btn btn-primary" data-artist-name = "' + artist[i].name + '" onclick="suaInfor(event)"> Sửa </button>' +
-            '<button class="btn btn-info" data-artist-name = "' + artist[i].name + '" onclick = "xoaInfor(event)"> Xóa </button>' +
-            '<button class="btn btn-warning myButton" data-artist-name = "' + artist[i].name + '" onclick = "bangChiTiet(event)"> Chi tiết </button>  </td> </tr>'
+            '<tr> <th scope="row">' + (i + 1) + '</th> <td>' + a[i].name +
+            '</td><td>' + a[i].tenThat +
+            '</td><td>' + a[i].sinhNhat +
+            '</td><td>' + a[i].nation +
+            '</td><td>' + a[i].inFor +
+            '</td><td>' + a[i].image +
+            '</td><td>' + a[i].anhBackGround +
+            '</td><td class = "vid-ids">' + a[i].videoId +
+            '</td><td class = "anh-vid">' + 
+            a[i].thumbnail +
+            '<td><button class="btn btn-primary" data-artist-name = "' + a[i].name + '" onclick="suaInfor(event)"> Sửa </button>' +
+            '<button class="btn btn-info" data-artist-name = "' + a[i].name + '" onclick = "xoaInfor(event)"> Xóa </button>' +
+            '<button class="btn btn-warning myButton" data-artist-name = "' + a[i].name + '" onclick = "bangChiTiet(event)"> Chi tiết </button>  </td> </tr>'
 
     }
 }
@@ -150,6 +164,7 @@ function displayInfor() {
 
 // Lấy videoID và thumbnail theo nghệ sĩ tương ứng  
 function getInfor(json, currentArtist) {
+
     let video = JSON.parse(json);
     let ds = video.items;
     let videoIDs = [];
@@ -170,6 +185,7 @@ function getInfor(json, currentArtist) {
         currentArtist.thumbnail.push(anhVideo[j]);
     }
 
+    console.log('Video của ' + currentArtist.name, videoIDs)
     displayInfor();
 }
 
@@ -178,57 +194,74 @@ function search() {
     let input = document.getElementById("tim-kiem").value;
     console.log(input);
     let i = 0;
-    while (i < artist.length) {
-        let currentArtist = artist[i];
+
+    while (i < a.length) {
+        let currentArtist = a[i];
         // if ( currentArtist.name.toLowerCase().includes(input.toLowerCase()) ) {
         if (currentArtist.name.toLowerCase().search(input.toLowerCase()) >= 0) {
             document.getElementById('table-content').innerHTML +=
                 '<tr> <th scope="row">' + (i + 1) + '</th> <td>' + currentArtist.name +
+                '</td><td>' + currentArtist.tenThat +
+                '</td><td>' + currentArtist.sinhNhat +
                 '</td><td>' + currentArtist.nation +
+                '</td><td>' + currentArtist.inFor +
                 '</td><td>' + currentArtist.image +
+                '</td><td>' + currentArtist.anhBackGround +
                 '</td><td class = "vid-ids">' + currentArtist.videoId + '<br/>' +
                 '</td><td class = "anh-vid">' +
                 currentArtist.thumbnail +
                 '<td><button class="btn btn-primary" data-artist-name = "' + currentArtist.name + '" onclick="suaInfor(event)"> Sửa </button>' +
                 '<button class="btn btn-info" data-artist-name = "' + currentArtist.name + '" onclick = "xoaInfor(event)"> Xóa </button>' +
-                // '<button class="btn btn-warning" id = '+`myButton${i}` + ' data-artist-name = "' + currentArtist.name + ` onclick = "bangChiTiet(event,``${currentArtist.name}`+ ")> Chi tiết </button>  </td> </tr>"
                 '<button class="btn btn-warning" class = "MyButton" +  data-artist-name = "' + currentArtist.name + '" onclick = bangChiTiet(event)> Chi tiết </button>  </td> </tr>'
 
         }
         i++;
-        // else {
-        //     alert('Không có ca sĩ này')
-        // }
+
     }
 }
 
 
 function themNgheSi() {
-    let name = prompt('Bạn hãy nhập tên của ca sĩ:');
-    let realName = prompt('Bạn hãy nhập tên nhật của ca sĩ:');
-    let birthDay = prompt('Bạn hãy nhập sinh nhật của ca sĩ:');
-    let thongTin = prompt('Bạn hãy nhập thông tin của ca sĩ: \n Ex: <p>Content</p>');
-    let nation = prompt('Bạn hãy nhập quốc tịch của ca sĩ:');
-    let image = prompt('Bạn hãy nhập link ảnh chân dung của ca sĩ :');
-    let anhNen = prompt('Bạn hãy nhập link ảnh nền của ca sĩ :');
-    artist.push({
+    alert('Thêm thành công!');
+    let name = document.getElementById('name').value
+    let realName = document.getElementById('real-name').value
+    let birthDay = document.getElementById('birthday').value
+    let nation = document.getElementById('nation').value
+    let image = document.getElementById('portrait').value
+    let anhNen = document.getElementById('background').value
+    let thongTin = document.getElementById('infor').value
+
+    a.push({
         'name': name,
         'tenThat': realName,
         'sinhNhat': birthDay,
         'nation': nation,
         'inFor': thongTin,
-        'image': '<img class="rounded" width="50" height="50" src=" ' + image + '">',
-        'anhBackGround': '<img class="rounded" width="50" height="50" src=" ' + anhNen + '">',
+        'image': '<img class="rounded" id="singer1-ava-boder"  src=" ' + image + '">',
+        'anhBackGround': '<img class="rounded" id="singer1-cover-boder src=" ' + anhNen + '">',
         'videoId': [],
         'thumbnail': [],
     })
-    console.log(artist[artist.length - 1])
-    let currentArtist = artist[artist.length - 1];
-    getDataCurrentArtist(currentArtist);
-    console.log(currentArtist)
-    // getData cho currentArtist
-    displayInfor();
+
+    // await getData()
+    getDataCurrentArtist(a[a.length - 1])
+    console.log(a[a.length - 1])
+
+    // Xóa dữ liệu trong thanh input sau khi lưu xong
+    document.getElementById('name').value = '';
+    document.getElementById('real-name').value= '';
+    document.getElementById('birthday').value= '';
+    document.getElementById('nation').value= '';
+    document.getElementById('portrait').value= '';
+    document.getElementById('background').value= '';
+    document.getElementById('infor').value= '';
+
+    // for (let i = 0; i < a.length; i++) {
+    //     localStorage.setItem(`artist${i + 1}`, JSON.stringify(a[i]))
+    // }
+
 }
+
 
 
 function suaInfor(e) {
@@ -239,31 +272,33 @@ function suaInfor(e) {
     let nation = prompt('Bạn hãy nhập quốc tịch của ca sĩ:');
     let image = prompt('Bạn hãy nhập link ảnh chân dung của ca sĩ :');
     let anhNen = prompt('Bạn hãy nhập link ảnh nền của ca sĩ :');
-    for (let i = 0; i < artist.length; i++) {
-        if (e.target.dataset.artistName === artist[i].name) {
+    for (let i = 0; i < a.length; i++) {
+        if (e.target.dataset.artistName === a[i].name) {
             var viTri = i;
-            artist[i].name = name;
-            artist[i].tenThat = realName;
-            artist[i].sinhNhat = birthDay;
-            artist[i].nation = nation;
-            artist[i].inFor = thongTin;
-            artist[i].image = image;
-            artist[i].anhBackGround = anhNen;
-            artist[i].videoId = [];
-            artist[i].thumbnail = [];
+            console.log(viTri)
+            a[i].name = name;
+            a[i].tenThat = realName;
+            a[i].sinhNhat = birthDay;
+            a[i].nation = nation;
+            a[i].inFor = thongTin;
+            a[i].image = image;
+            a[i].anhBackGround = anhNen;
+            a[i].videoId = [];
+            a[i].thumbnail = [];
         }
     }
-    console.log(e)
+    console.log(a);
     // Lấy dữ liệu cho ca sĩ vừa sửa
-    getDataCurrentArtist(artist[viTri]);
+    getDataCurrentArtist(a[viTri]);
     displayInfor();
 
 }
 
 function xoaInfor(e) {
-    for (let i = 0; i < artist.length; i++) {
-        if (e.target.dataset.artistName === artist[i].name) {
-            artist.splice(i, 1);
+    for (let i = 0; i < a.length; i++) {
+        if (e.target.dataset.artistName === a[i].name) {
+            a.splice(i, 1);
+            localStorage.removeItem(`artist${i + 1}`);
         }
     }
     displayInfor();
@@ -329,13 +364,18 @@ function xoaInfor(e) {
 
 
 
-
 function bangChiTiet(e) {
+
+    for (let i = 0; i < a.length; i++) {
+        localStorage.setItem(`artist${i + 1}`, JSON.stringify(a[i]))
+    }
+
     // Get the modal
     // console.log(artist)
+    console.log(a)
     let modal = document.getElementById("myModal");
     modal.style.display = "block";
-    
+
     // Get the <span> element that closes the modal
     let span = document.getElementsByClassName("close")[0];
 
@@ -350,18 +390,18 @@ function bangChiTiet(e) {
 
     document.getElementById("content-expansion").innerHTML = '';
 
-    for (let i = 0; i < artist.length; i++) {
-        if (e.target.dataset.artistName === artist[i].name) {
+    for (let i = 0; i < a.length; i++) {
+        if (e.target.dataset.artistName === a[i].name) {
             // console.log(artist[i].videoId)
-            let listVideo = artist[i].videoId;
+            let listVideo = a[i].videoId;
             // console.log(listVideo.length)
             for (let j = 0; j < listVideo.length; j++) {
                 document.getElementById("content-expansion").innerHTML += '<tr> <th scope="row">' + (j + 1) + '</th>' + '<td>' + listVideo[j] + '</td>' + `<td id= anh-video${j} ` + '> </td> </tr>';
             }
 
-            let listAnhVideo = artist[i].thumbnail;
+            let listAnhVideo = a[i].thumbnail;
             for (let k = 0; k < listAnhVideo.length; k++) {
-                document.getElementById('anh-video' + k).innerHTML += listAnhVideo[k];
+                document.getElementById('anh-video' + k).innerHTML += '<td><img class="anh-thumbnail"  src=" ' + listAnhVideo[k] + '"</td>' ;
                 console.log(listAnhVideo[k])
             }
         }
@@ -369,7 +409,6 @@ function bangChiTiet(e) {
 
     //Get data from class vid-ids ,  anh-vid
     console.log(e.target.dataset.artistName)
-
 
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (e) {
@@ -396,6 +435,7 @@ function themTable() {
 
     submit.onclick = function () {
         modal2.style.display = "none";
+        themNgheSi();
     }
 
     // When the user clicks anywhere outside of the modal, close it
