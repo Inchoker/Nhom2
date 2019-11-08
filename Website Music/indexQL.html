@@ -32,14 +32,14 @@
 
                         <!-- Giúp button và input cùng trên một dòng -->
                         <div class="input-group">
-                            <form action="#" class="form-inline my-2 my-lg-0 input-group">
+                            <form class="form-inline my-2 my-lg-0 input-group">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Search" id="tim-kiem"
                                     onkeyup="search()">
                                 <div class="input-group-btn">
                                     <button class="btn btn-outline-success my-2 my-sm-0 " onclick="search()"
                                         type="submit">Search</button>
                                         <!-- đã có thuộc tính onclick ở trong thẻ html rồi thì trong code js ko cần phải thêm sự kiện onclick cho nó nữa, như v rất dễ xung đột code -->
-                                    <button class="btn btn-primary " id="button2" onclick="themTable()">Thêm</button>
+                                    <button class="btn btn-primary" type="button" id="button2" onclick="themTable()">Thêm</button>
                                 </div>
 
                             </form>
